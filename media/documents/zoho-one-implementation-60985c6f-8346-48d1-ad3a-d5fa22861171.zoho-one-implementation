@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="content-language" content="en-us">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<link rel="shortcut icon" href="image/yaali-fav-icon.png" />
+	<link rel="preload" as="image" href="image/zoho-one-yaali.png" >
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+		integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+		type="text/css" media="all" />
+	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com/">
+   <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Khula&family=Changa:wght@500&family=Fira+Sans+Condensed&family=IBM+Plex+Sans&family=Noto+Sans&family=Tajawal&display=swap" rel="stylesheet">
+	<link rel="preload" href="css/style.css" as="style" onload="this.rel='stylesheet'">
+	<link rel="stylesheet" href="css/style.css" media="print" onload="this.media='all'">
+	<noscript><link rel="stylesheet" href="css/style.css" media="screen"></noscript>
+	<link rel="preconnect dns-prefetch" href="https://www.googletagmanager.com">
+	<link rel='dns-prefetch' href='//maxcdn.bootstrapcdn.com' />
+	<link rel='dns-prefetch' href='//cdnjs.cloudflare.com' />
+    <link rel='dns-prefetch' href='//bizappln.zohobookings.com' />
+    <link rel='dns-prefetch' href='//front.optimonk.com' />
+	<script type='text/javascript' src='vendor/jquery.min.js'></script>
+	<script type='text/javascript' src='vendor/bootstrap.min.js'></script>
+	<meta name="theme-color" content="#4374b9">
+	
+	<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+	<meta name="email" content="creator@bizappln.com">
+	
+	<meta name="coverage" content="Worldwide" />
+	<meta name="Distribution" content="Global">
+	<meta name="city" content="Chennai" />
+	<meta name="state" content="Tamil Nadu" />
+	<meta name="rating" content="General" />
+	<meta name="audience" content="All" />
+	<meta name="author" content="Bala nagendran">
+	<meta name="googlebot" content="index,follow" />
+	<meta name="yahoobot" content="index, follow" />
+	<meta name="bingbot" content="index,follow" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://www.bizappln.com/zoho-one-implementation.html" />
+	<meta property="og:title" content="Zoho Implementation | Zoho One Partner : Yaali" />
+	<meta property="og:description"
+		content="As a leading Zoho Implementation partner, we know ins and out of Zoho one,with that knowledge we efficiently implement Zoho One in your business." />
+	<meta property="og:image" content="https://www.bizappln.com/image/Zoho-One-implementation.png" />
+	<meta property="og:image:type" content="image/png" />
+	<meta property="og:image:width" content="600" />
+	<meta property="og:image:height" content="335" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@yaalibizappln" />
+	<meta name="twitter:title" content="Zoho Implementation | Zoho One Partner : Yaali" />
+	<meta name="twitter:description"
+		content="As a leading Zoho Implementation partner, we know ins and out of Zoho one,with that knowledge we efficiently implement Zoho One in your business." />
+	<meta name="twitter:creator" content="@yaalibizappln" />
+	<meta name="twitter:image:src" content="https://www.bizappln.com/image/Zoho-One-implementation.png" />
+	<meta name="twitter:url" content="https://www.bizappln.com/zoho-one-implementation.html" />
+	<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "Organization",
+"name": "Yaali Bizappln Solutions",
+"legalName": "LGT Technologies Pvt. Ltd.",
+"email": "creator@bizappln.com",
+"alternateName": [
+"Yaali Bizappln",
+"Yaali"
+],
+"url": "https://www.bizappln.com",
+"logo": "https://www.bizappln.com/image/yaali-logo.png",
+"sameAs" : [
+"https://www.facebook.com/yaalibizappln",
+"https://www.twitter.com/yaalibizappln",
+"https://www.linkedin.com/company/yaalibizappinc",
+"https://www.pinterest.com/yaalibizappln"
+],
+"address": {
+"@type": "PostalAddress",
+"streetAddress": "207, Velachery Main Rd, Dhandeeswaram Nagar, Velachery",
+"addressLocality": "Chennai",
+"addressRegion": "TN",
+"postalCode": "600042",
+"addressCountry": "India"
+},
+"contactPoint": [
+{
+"@type": "ContactPoint",
+"telephone": "+919840368815",
+"contactType": "Owner"
+}
+],
+"founder": "Arun Kumar",
+"foundingDate": "2016-05-12",
+"numberOfEmployees": "240"
+}
+</script>
+	<link rel="canonical" href="https://www.bizappln.com/zoho-one-implementation.html" />
+	<!-- Google Tag Manager -->
+	<script>(function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-MZWDJ56');</script> 
+	<!-- End Google Tag Manager -->
+	<title>Zoho Implementation | Zoho One Partner : Yaali</title>
+	<meta name="description"
+		content="As a leading Zoho Implementation partner, we know ins and out of Zoho one,with that knowledge we efficiently implement Zoho One in your business.">
+	<meta name="keywords"
+		content="Zoho one,Zoho One apps,Zoho one implementation,best business management software,Zoho One Partner,Zoho Implementation Partner" />
+
+</head>
+
+<body>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MZWDJ56" height="0" width="0"
+			style="display:none;visibility:hidden"></iframe></noscript> 
+	<!-- End Google Tag Manager (noscript) -->
+	<!-- navigation section -->
+	<div id="navigation">
+	</div>
+	</div>
+	<div class="container-fluid head">
+		<div style="background-image:url('image/zoho-one-yaali.jpg');" class="hero-background"></div>
+		<div class="hero" style="width: 100%;">
+			<div class="row mobile-view" style="width: 100%;">
+				<div class="col-md-6 zoho-one-hero-text">
+					<hgroup>
+						<h2 style="color: #000;"><span style="color:green">Move from</span> scattered business
+							applications to a centralized
+							& cloud based application!</h2>
+						<h3 style="color: #000;"><span style="color:green;font-weight: 600;">Maximize Your ROI</span>
+							with Zoho One</h3>
+						<a href="#main-content"><button class="button-contact-zoho-one" role="button">Learn
+								More</button></a>
+					</hgroup>
+				</div>
+				<div class="col-md-6">
+					<img class="zoho-one-yaali-hero-img" src="image/zoho-one-yaali.png" style="width:100%;"
+						alt="zoho-one-implementation">
+					<p class="zoho-one-hero-available-apps-text"><span>40
+							<!-- -->+
+						</span> <!-- -->apps available</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="hero zoho-creator-hero-bg" style="width: 100%;">
+			<div class="row desktop-view" style="margin-top: 300px;">
+				<div class="col-md-6 zoho-one-hero-text">
+					<hgroup>
+						<h2 style="color: #000;font-size: 3rem;"><span style="color:green">Move from</span> scattered
+							business applications to a centralized
+							& cloud based application!</h2>
+						<h3 style="color: #000;"><span style="color:green;">Maximize Your ROI</span>
+							with Zoho One</h3>
+						<a href="#main-content"><button class="button-contact-zoho-one" role="button">Learn
+								More</button></a>
+					</hgroup>
+				</div>
+				<div class="col-md-6">
+					<img class="zoho-one-yaali-hero-img" src="image/zoho-one-yaali.png" style="width:100%;"
+						alt="zoho-one-implementation">
+					<p class="zoho-one-hero-available-apps-text"><span>40
+							<!-- -->+
+						</span> <!-- -->apps available</p>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid cont-main-head slider-bottom zoho-one-slider-bottom">
+			<div class="col-md-4 col-sm-6 col-xs-12">
+			</div>
+			<div class="col-md-4 hidden-xs hidden-sm">
+				<div class="scrl">
+					<a href="#main-content" id="scroll-down1">
+						<div class="chevron"></div>
+						<div class="chevron"></div>
+						<div class="chevron"></div>
+						<div class="text">Scroll Down</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-12">
+
+			</div>
+		</div>
+	</div>
+	</div>
+	</div>
+	<!-- zoho section intro -->
+	<div class="container-fluid" id="main-content">
+		<div class="container">
+			<div class="row">
+				<div class="breadcrumbs">
+					<span>
+						<a href="index.html">Home</a>
+						<a class="bread-icon breadcrumbs-last" href="https://www.bizappln.com/zoho-one-implementation.html">Zoho One Implementation</a>
+					</span>
+				</div>
+			</div>
+			<div class="row pt-2 pb-1">
+				<div class="col-md-8 col-md-offset-2 col-xs-12 col-sm-10 col-sm-offset-1">
+					<div class="row">
+						<h1 class="sub_heading_creator zoho-one-header"><span style="color:#1daf14">Zoho One</span> -A suite of Integrated Business Apps to run your entire organization.</h1>
+					</div>
+					<div class="row">
+
+						<p class="creator-para-left p-12 zoho-one-content">Looking for an affordable & best business management software? <b>Zoho One</b> is your best bet.Like many business owners,if you are searching for a Zoho Implementation Partners to get the most out of Zoho One apps,then your search might ends here. <b>YAALI</b> is one of the renowned Zoho One Partners in India.
+						</p>
+
+						<p class="creator-para-left p-12 zoho-one-content"> When it comes to <b>Zoho One Implementation</b>,
+							you need an expert
+							who understands various functions of your business processes and map them to the Zoho One
+							apps.Being a leading & reliable <b>Zoho One Partner</b>,we know how to implement Zoho One efficiently in your business.<br><br>
+							
+						</p>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<hr>
+	<!-- Improve your Business with Zoho One -->
+	<div class="container mt-2 mb-3">
+		<div class="col-md-12 col-xs-12 col-sm-12">
+			<h2 class="sub_heading_creator zoho-one-header"><span style="color:#1daf14">Revolutionize </span>your
+				business with Zoho One
+			</h2>
+			<h3 class="sub_heading_creator1"> Is Zoho One worth it?</h3>
+			<p class="creator-para-left p-12 zoho-one-content" style="margin-bottom:0;padding-bottom:0px !important">
+				<b>YES</b>.If you're constantly <b>jumping between apps, duplicating data between them, paying
+					multiple subscriptions and then using even more apps to connect them all together & paying
+					lumpsome amount on
+					individual applications for your business,</b> then switch to Zoho One & access all the Zoho apps
+				from any device all with a single login and password.Managing all your core business processes in one system is priceless.
+			</p>
+
+			<p class="creator-para-left p-12 zoho-one-content" style="margin-bottom:0;padding-bottom:0px !important">If
+				you're keen to
+				know whether <b>Zoho One right for my business or not,</b>our Zoho Expert will assess your current business process & recommend you the
+				best Zoho One applications for your business to run,tailored to meet your specific business needs.
+			</p>
+
+			<p class="creator-para-left p-12 zoho-one-content" style="margin-bottom:0;padding-bottom:0px !important">If
+				you're looking
+				to <b>'migrate from current applications to Zoho One'</b>,our <b>Zoho One Consultants</b> provides you the
+				detailed roadmap for a successful implementation of Zoho One apps for your business and making it easier for your teams to use Zoho apps.
+			</p>
+			<!-- contact section -->
+			<div class="container">
+				<div class="col-md-12 col-xs-12 col-sm-12 cnct-dev text-center p-0 mt-3">
+					<div class="col-md-5 col-xs-12 col-sm-12 p-0">
+						<h3 class="contact-text-head zoho-one-contact-box"><span style="margin: 0 2px">Wanna setup and
+								configure Zoho One for
+								your business?</span></h3>
+					</div>
+					<div class="col-md-7 col-xs-12 col-sm-12 ctn-box-btn" style="margin: 15px 0;">
+						<a href="https://www.bizappln.com/contact-us.html"><button type="button"
+								class="btn creator-btn">Contact us
+								now&#x2192;</button></a>
+						<button id="schedule-btn" type="button" class="btn creator-btn-outline" data-toggle="modal"
+							data-target="#myModalFullscreen" contenteditable="false">Talk to our Zoho Expert</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Why Yaali for Zoho One Implementation? -->
+	<div class="container mt-2 mb-2">
+		<div class="col-md-12 col-xs-12 col-sm-12">
+			<h2 class="sub_heading_creator zoho-one-header">Why organizations choose <span
+					style="color:#1daf14">Zoho One
+					Implementation with YAALI?</span>
+			</h2>
+
+			<p class="creator-para-left p-12 zoho-one-content" style="margin-bottom:0;padding-bottom:0px !important">As a leading Zoho One Partner, we
+				know ins and out of Zoho One & having a vast experience in implementing Zoho One for various business & industry verticals. With that
+				experience,<b>we
+					know how to make Zoho One to work for your business & connect with the diverse business
+					functions</b>
+				– Sales & Marketing, Support, Communication, Collaboration, Productivity, Finance, Operations, HR and
+				business process to work together seamlessly and helps you to stay on top of all the things that are
+				important for your business.</p>
+
+			<h3 class="creator-para-left p-12 zoho-one-content" style="margin-bottom:0;padding-bottom:0px !important">
+				Here are some of the
+				<b>benefits of Zoho One</b> you get, when you engage with us for Zoho Implementation:
+			</h3>
+
+			<ul class="bullet-creator">
+				<li>Streamline & Automate your business process.</li>
+				<li>Eliminates the complexity of running multiple business applications and negating the need for
+					multiple contracts & renewal cycles.</li>
+				<li>Different department in your business can connect with each other seamlessly,which improves productivity and run your business efficiently.</li>
+				<li>We remove your data silos by seamlessly integrate Zoho One with the application which is crucial
+					for
+					your business.</li>
+				<li>Administrators have full supervision over their business data.So,you can make your employees become
+					more efficient and productive as they can access data from a single place based upon the roles &
+					access-control to take informed business
+					decisions.</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- How we are beneficial for your business? -->
+	<div class="container zoho-one-grow-business-container" style="padding-top:15px">
+		<div class="row">
+			<h2 class="sub_heading zoho-one-header">See how we <span style="color:#1daf14">implement Zoho One</span> to
+				run and Grow
+				your Business.</h2>
+			<div class="under-line desktop-view"><span></span></div>
+			<p class="tagline">"Expert in all Zoho One Apps."</p>
+			<p class="first-para-content zoho-one-content"><b>Building a business is hard,but running a business
+					shouldn't be</b>. With our Zoho
+				Implementation, you can able to manage, automate and scale your business at ease.</br>
+				You can ask us,how much does Zoho one cost?
+				Well,you don't need to fret about that.<b> Zoho One pricing is definitely not going to put a hole in your pocket.</b></br></br>
+				Check out below what we can able to do with Zoho One Products for your business.</p>
+		</div>
+		<div class="row">
+			<div class="col-md-12 col-xs-12 col-sm-12">
+				<div class="row zoho-beneficial">
+					<div class="col-md-11 col-xs-12 col-sm-10">
+						<h3><span style="color:#1daf14;font-weight: 600;">Sales and Marketing</span></h3>
+						<p class="zoho-one-content">We setup Zoho One to align the sales & marketing team to work
+							together that promote collaboration and productivity across your organization.So you can
+							work more effectively and efficiently.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-12 col-xs-12 col-sm-12">
+				<div class="row zoho-beneficial">
+					<div class="col-md-11 col-xs-12 col-sm-10">
+						<h3><span style="color:#1daf14;font-weight: 600;">Support</span></h3>
+						<p class="zoho-one-content">We help you to automate your support process,make support reps to
+							respond quicker and and support customers across multiple channels from single place by
+							setting up the help desk for your business.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-12 col-xs-12 col-sm-12">
+				<div class="row zoho-beneficial">
+					<div class="col-md-11 col-xs-12 col-sm-10">
+						<h3><span style="color:#1daf14;font-weight: 600;">HR</span></h3>
+						<p class="zoho-one-content">We help you to automate your HR tasks & simply the HR related
+							activities,streamline your recruitment process,and build a happier workforce.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-12 col-xs-12 col-sm-12">
+				<div class="row zoho-beneficial">
+					<div class="col-md-11 col-xs-12 col-sm-10">
+						<h3><span style="color:#1daf14;font-weight: 600;">Accounting</span></h3>
+						<p class="zoho-one-content">We assist you to take a workload off from your accounting team by
+							automating the mundane tasks in accounting right from deals to raising sales orders, GST
+							invoicing,tax filing and simplify collecting the payments from the customers.</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+	<!-- contact section -->
+	<div class="container">
+		<div class="col-md-12 col-xs-12 col-sm-12 cnct-dev text-center p-4 mt-3">
+			<div class="col-md-6 col-xs-12 col-sm-12 p-0">
+				<h3 class="contact-text-head">Zoho One help? We're here to help you setup Zoho one for your business,without
+					breaking the bank.</h3>
+
+			</div>
+			<div class="col-md-6 col-xs-12 col-sm-12 ctn-box-btn" style="margin-bottom:20px">
+				<a href="https://www.bizappln.com/contact-us.html"><button type="button" class="btn creator-btn">Contact
+						us now&#x2192;</button></a>
+				<button id="schedule-btn" type="button" class="btn creator-btn-outline" data-toggle="modal"
+					data-target="#myModalFullscreen" contenteditable="false">Talk to our Experts</button>
+			</div>
+		</div>
+	</div>
+
+	<!-- our support section -->
+	<div class="container mt-2">
+		<div class="row">
+			<h2 class="sub_heading zoho-one-header">Zoho One <span style="color:#1daf14">Support</span></h2>
+			<div class="under-line desktop-view"><span></span></div>
+			<p class="tagline">" Get Zoho One Implementation, Customization & Support Services from us. "</p>
+		</div>
+		<div class="row">
+			<div class="col-md-9 col-sm-12 zoho-support">
+				<p class="creator-para-left p-12 zoho-one-content"
+					style="margin-bottom:20px;padding-bottom:0px !important">As a
+					certified <b>Zoho One Partner</b>, we offer a comprehensive Zoho One services which includes
+					Zoho Implementation, Configuration, Customization and support, which enables you to get the most out of your Zoho investment.</p>
+				<p class="creator-para-left p-12 zoho-one-content"
+					style="margin-bottom:0;padding-bottom:0px !important"> Leverage our
+					Zoho One solution for your business to streamline business process, amplify
+					productivity, get proven profits over your investment and manage your business on the go with Zoho
+					One mobile app. Our <b><a href="https://www.bizappln.com/hire-zoho-developer.html" target="_blank">Zoho Developer</a></b>
+					offer <b>best-in-class Zoho One implementation services</b> suitable for every kind of businesses-Solopreneurs,
+					Entrepreneurs, Start-ups,
+					SMEs and Big Enterprises.</p>
+			</div>
+			<div class="col-md-3 col-sm-12 zoho-support-img">
+				<img src="image/Zoho-One-applications.png" alt="Zoho One Apps">
+			</div>
+		</div>
+	</div>
+	<div class="container mt-3 mb-3">
+		<div class="col-md-12 col-xs-12 col-sm-12 cnct-dev">
+			<div class="col-md-8 col-xs-12 col-sm-8 p-0">
+				<h3 class="contact-text-para text-center">Are you ready to harness the power of Zoho One?</h3>
+			</div>
+			<div class="col-md-4 col-xs-12 col-sm-4 ctn-box-btn">
+				<a href="https://www.bizappln.com/contact-us.html"><button type="button" class="btn creator-btn">Let's
+						discuss your
+						requirements</button></a>
+			</div>
+		</div>
+	</div>
+	<!-- contact us section for zoho one -->
+	<div class="container" style="padding:60px 15px 15px">
+		<div class="col-md-6 zoho-contact">
+			<h2>Interested? Ready to implement Zoho One in your business.</h2>
+			<p class="zoho-one-content">Our Zoho One Developers are available to support and guide you on how Zoho
+				One can meet your
+				business
+				needs by understanding your business processes completely and offer a solution that caters to your specific
+				needs.</p>
+			<a href="https://www.bizappln.com/contact-us.html"><button class="button-contact" style="margin-left:0"
+					role="button">Contact
+					Us Now&#x2192;</button></a>
+		</div>
+		<div class="col-md-6 text-center">
+			<img src="image/yaali-zoho-contact.gif" style="width:250px;" alt="premium support for zoho one">
+		</div>
+	</div>
+	<!-- masonry effect portfolio -->
+	<div class="container">
+		<div class="row">
+			<h2 class="sub_heading zoho-one-header"><span style="color:#1daf14">Zoho One Apps Portfolio</span></h2>
+			<div class="under-line desktop-view"><span></span></div>
+			<p class="tagline">" See what we have nailed. "</p>
+
+			<p class="first-para-content pb-3 zoho-one-content">A few selected Zoho One Projects are listed here. <b
+					style="font-size: 20px;"><a href="portfolio.html">Explore our portfolio</a></b> to know about
+				the projects we have
+				done,which are categorized by Industries and Zoho Products.</p>
+		</div>
+		<div id="portfolio">
+		</div>
+	</div>
+	<!-- zoho award section -->
+	<div id="awards">
+	</div>
+
+	<!-- clutch new -->
+	<div id="clutch_widget">
+	</div>
+
+	<!-- testimonial new -->
+	<div id="testimonial">
+	</div>
+
+	<div class="modal fade" id="testimonial" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog">
+			<!-- Modal content-->
+			<div class="modal-content" style="text-align:center">
+				<div class="modal-body">
+					<video width="100%" class="video-modal" controls>
+						<source src="" type="video/mp4" allowscriptaccess="always">
+					</video>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Industry we serve -->
+	<div class="container">
+		<div class="row">
+			<h2 class="sub_heading zoho-one-header"><span style="color:#1daf14">Industries</span> Served </h2>
+			<div class="under-line desktop-view"><span></span></div>
+			<p class="tagline">" Industry-specific Solutions tailored to your business "</p>
+
+			<p class="first-para-content pb-3 zoho-one-content">In order to meet the specific industry needs, we act
+				like chameleons on
+				providing solutions for the industry we're working with.</p>
+		</div>
+		<div class="row creator-build-app">
+			<div class="col-md-3 col-xs-6 col-sm-4">
+				<div class="indus-box">
+					<i class="creator-sprite retail"></i>
+					<h4>Retail/e-commerce</h4>
+				</div>
+			</div>
+			<div class="col-md-3 col-xs-6 col-sm-4">
+				<div class="indus-box">
+					<i class="creator-sprite manufact"></i>
+					<h4>Manufacturing</h4>
+				</div>
+			</div>
+			<div class="col-md-3 col-xs-6 col-sm-4">
+				<div class="indus-box">
+					<i class="creator-sprite hotel"></i>
+					<h4>Construction</h4>
+				</div>
+			</div>
+			<div class="col-md-3 col-xs-6 col-sm-4">
+				<div class="indus-box">
+					<i class="creator-sprite elearn"></i>
+					<h4>Education & E-learning</h4>
+				</div>
+			</div>
+		</div>
+
+		<div class="row creator-build-app">
+			<div class="col-md-3 col-xs-6 col-sm-4">
+				<div class="indus-box">
+					<i class="creator-sprite agent"></i>
+					<h4>Real Estate</h4>
+				</div>
+			</div>
+			<div class="col-md-3 col-xs-6 col-sm-4">
+				<div class="indus-box">
+					<i class="creator-sprite forestryi"></i>
+					<h4>Forestry</h4>
+				</div>
+			</div>
+			<div class="col-md-3 col-xs-6 col-sm-4">
+				<div class="indus-box">
+					<i class="creator-sprite lawyer"></i>
+					<h4>Law Firms</h4>
+				</div>
+			</div>
+			<div class="col-md-3 col-xs-6 col-sm-4">
+				<div class="indus-box">
+					<i class="creator-sprite school"></i>
+					<h4>Enterprises</h4>
+				</div>
+			</div>
+		</div>
+		<div class="row text-center">
+			<a href="industries-served.html"><button class="btn creator-btn">Know More&#x2192;</button></a>
+		</div>
+	</div>
+	<!-- contact button section -->
+	<div class="container mt-2">
+		<div class="row mt-2">
+			<p class="tagline">Have any questions? We'd love to hear from you</p>
+		</div>
+	</div>
+	<div class="btn-group switch-Btn mb-3">
+		<span class="btn-or">Or</span>
+		<a href="https://www.bizappln.com/contact-us.html"><button
+				class="btn btn-outline-primary contact-schedule-btn ctn-dark" style="margin-right:10px"><span>Contact
+					us</span><span>Share your requirements</span></button></a>
+		<button class="btn btn-outline-primary contact-schedule-btn ctn-light" id="schedule-btn1" data-toggle="modal"
+			data-target="#myModalFullscreen" contenteditable="false"><span>Talk to
+				us</span><span>Schedule a
+				call</span></button>
+	</div>
+
+	<!-- footer section -->
+	<div id="footer">
+	</div>
+
+	<!-- schedule call modal -->
+	<div class="modal fade modal-fullscreen  footer-to-bottom" id="myModalFullscreen" tabindex="-1" role="dialog"
+		aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog animated zoomInLeft">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+					<div class="row schedule-call-section">
+						<div class="col-sm-1">
+							<img class="schedule-call" src="image/yaali-zoho-partner.png">
+						</div>
+						<div class="col-sm-4">
+							<span class="yaali-text">
+								Yaali Bizappln Solns
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="modal-body" style="padding:0px;height:100%">
+					<iframe width='100%' height='585px'
+						src='https://bizappln.zohobookings.com/portal-embed#/customer/callschedule' frameborder='0'
+						allowfullscreen=''> </iframe>
+				</div>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal-dialog -->
+	</div>
+	<!-- /.modal -->
+	<script type="text/javascript">
+		/* navigation section */
+		$(function () { $("#navigation").load("navigation-two.html"); });
+		/* portfolio section */
+		$(function () { $("#portfolio").load("portfolio-common.html"); });
+		/* our partner section */
+		$('.more-less').click(function () {
+			var $this = $(this);
+			$this.toggleClass('more-less');
+			if ($this.hasClass('more-less')) {
+				$this.text('View More');
+			} else {
+				$this.text('View Less');
+			}
+		});
+		/* footer section */
+		$(function () { $("#footer").load("footer.html"); });
+		/* schedule a call */
+		$("#schedule-btn").click(function () {
+			$("#call-iframe").attr('src', 'https://bizappln.zohobookings.com/');
+		});
+		$("#schedule-btn1").click(function () {
+			$("#call-iframe").attr('src', 'https://bizappln.zohobookings.com/');
+		});
+		/* testimonial section */
+		$(function () { $("#testimonial").load("testimonial-common.html"); });
+		/* Award section */
+		$(function () { $("#awards").load("awards-common.html"); });
+		/* clutch section */
+		$(function () { $("#clutch_widget").load("clutch_widget_common.html"); });
+		/* preloader */
+		$(function () {
+			$("#loading").fadeOut(7000, function () {
+				$(".modal-body").fadeIn(1000);
+			});
+		});
+
+	</script>
+	
+</body>
+
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Crawler Admin</title>
+  <!--favicon-->
+  <link rel="icon" href="{% static 'assets/images/favicon-32x32.png' %}" type="image/png" />
+  <!-- Vector CSS -->
+  <link href="{% static 'assets/plugins/vectormap/jquery-jvectormap-2.0.2.css' %}" rel="stylesheet" />
+  <!--plugins-->
+  <link href="{% static 'assets/plugins/simplebar/css/simplebar.css' %}" rel="stylesheet" />
+  <link href="{% static 'assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css' %}" rel="stylesheet" />
+  <link href="{% static 'assets/plugins/metismenu/css/metisMenu.min.css' %}" rel="stylesheet" />
+  <!-- loader-->
+  <link href="{% static 'assets/css/pace.min.css' %}" rel="stylesheet" />
+  <script src="{% static 'assets/js/pace.min.js' %}"></script>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}" />
+  <!-- Icons CSS -->
+  <link rel="stylesheet" href="{% static 'assets/css/icons.css' %}" />
+  <!-- App CSS -->
+  <link rel="stylesheet" href="{% static 'assets/css/app.css' %}" />
+  <link rel="stylesheet" href="{% static 'assets/css/dark-sidebar.css' %}" />
+  <link rel="stylesheet" href="{% static 'assets/css/dark-theme.css' %}" />
+</head>
+
+<body>
+{% csrf_token %}
+<!-- wrapper -->
+  <div class="wrapper">
+    <!--sidebar-wrapper-->
+    <div class="sidebar-wrapper" data-simplebar="true">
+			<div class="sidebar-header">
+				<div class="">
+					<img src="assets/images/logo-icon.png" class="logo-icon-2" alt="" />
+				</div>
+				<div>
+					<h4 class="logo-text">Crawler</h4>
+				</div>
+				<a href="javascript:;" class="toggle-btn ml-auto"> <i class="bx bx-menu"></i>
+				</a>
+			</div>
+			<!--navigation-->
+			<ul class="metismenu" id="menu">
+				<li>
+					<a href="{% url 'dashboard' %}">
+						<div class="parent-icon icon-color-1"><i class="bx bx-home-alt"></i></div>
+						<div class="menu-title">Dashboard</div>
+					</a>
+				</li>
+				<li class="menu-label">Crawling Management</li>
+				<li>
+					<a href="{% url 'crawl_status' %}">
+						<div class="parent-icon icon-color-2">
+							<i class="bx bx-line-chart"></i>
+						</div>
+						<div class="menu-title">Crawling Status</div>
+					</a>
+				</li>
+				<li>
+					<a href="{% url 'crawl_url' %}">
+						<div class="parent-icon icon-color-3">
+							<i class="bx bx-line-chart"></i>
+						</div>
+						<div class="menu-title">URL Status</div>
+					</a>
+				</li>
+				<li>
+					<a href="{% url 'crawl_data' %}">
+						<div class="parent-icon icon-color-4">
+							<i class="bx bx-line-chart"></i>
+						</div>
+						<div class="menu-title">Crawled Data</div>
+					</a>
+				</li>
+			</ul>
+			<!--end navigation-->
+		</div>
+    <!--end sidebar-wrapper-->
+    <!--header-->
+    <header class="top-header">
+      <nav class="navbar navbar-expand">
+        <div class="left-topbar d-flex align-items-center">
+          <a href="javascript:;" class="toggle-btn">	<i class="bx bx-menu"></i>
+          </a>
+        </div>
+        <div class="flex-grow-1 search-bar">
+          <div class="input-group">
+            <div class="input-group-prepend search-arrow-back">
+              <button class="btn btn-search-back" type="button"><i class="bx bx-arrow-back"></i>
+              </button>
+            </div>
+            <input type="text" class="form-control" placeholder="search" />
+            <div class="input-group-append">
+              <button class="btn btn-search" type="button"><i class="lni lni-search-alt"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="right-topbar ml-auto">
+          <ul class="navbar-nav">
+            <li class="nav-item search-btn-mobile">
+              <a class="nav-link position-relative" href="javascript:;">	<i class="bx bx-search vertical-align-middle"></i>
+              </a>
+            </li>
+            <li class="nav-item dropdown dropdown-lg">
+              <a class="nav-link dropdown-toggle dropdown-toggle-nocaret position-relative" href="javascript:;" data-toggle="dropdown">	<span class="msg-count">0</span>
+                <i class="bx bx-comment-detail vertical-align-middle"></i>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right">
+                <a href="javascript:;">
+                  <div class="msg-header">
+                    <h6 class="msg-header-title">0 New</h6>
+                    <p class="msg-header-subtitle">Application Messages</p>
+                  </div>
+                </a>
+                <div class="header-message-list">
+                </div>
+                <a href="javascript:;">
+                  <div class="text-center msg-footer">View All Messages</div>
+                </a>
+              </div>
+            </li>
+            <li class="nav-item dropdown dropdown-lg">
+              <a class="nav-link dropdown-toggle dropdown-toggle-nocaret position-relative" href="javascript:;" data-toggle="dropdown">	<i class="bx bx-bell vertical-align-middle"></i>
+                <span class="msg-count">0</span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right">
+                <a href="javascript:;">
+                  <div class="msg-header">
+                    <h6 class="msg-header-title">0 New</h6>
+                    <p class="msg-header-subtitle">Application Notifications</p>
+                  </div>
+                </a>
+                <div class="header-notifications-list">
+                </div>
+                <a href="javascript:;">
+                  <div class="text-center msg-footer">View All Notifications</div>
+                </a>
+              </div>
+            </li>
+            <li class="nav-item dropdown dropdown-user-profile">
+              <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" href="javascript:;" data-toggle="dropdown">
+                <div class="media user-box align-items-center">
+                  <div class="media-body user-info">
+                    <p class="user-name mb-0">Admin</p>
+                    <p class="designattion mb-0">Available</p>
+                  </div>
+                  <img src="https://via.placeholder.com/110x110" class="user-img" alt="user avatar">
+                </div>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right">	<a class="dropdown-item" href="javascript:;"><i
+                      class="bx bx-user"></i><span>Profile</span></a>
+                <a class="dropdown-item" href="javascript:;"><i
+                        class="bx bx-cog"></i><span>Settings</span></a>
+                <a class="dropdown-item" href="javascript:;"><i
+                        class="bx bx-tachometer"></i><span>Dashboard</span></a>
+                <div class="dropdown-divider mb-0"></div>	<a class="dropdown-item" href="javascript:;"><i
+                        class="bx bx-power-off"></i><span>Logout</span></a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!--end header-->
+    <!--page-wrapper-->
+    <div class="page-wrapper">
+      <!--page-content-wrapper-->
+      <div class="page-content-wrapper">
+        <div class="page-content">
+          <div class="card radius-15">
+            <div class="card-body">
+                <div class="card-title">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-6 col-lg-6">
+                            <h5 class="mb-0">Queue Status </h5>
+                            <p>Only pending links are shown. Scrapped links are removed from queue as soon as done scraping.</p>
+                        </div>
+                        <div class="col-sm-3 col-md-3 col-lg-3">
+                            <buttom onclick="start_crawler()" class="btn btn-primary">Start Crawler</buttom>
+                        </div>
+                        <div class="col-sm-3 col-md-3 col-lg-3">
+                            <button onclick="stop_crawler()" class="btn btn-warning">Stop Crawler</button>
+                        </div>
+                    </div>
+                </div>
+                <hr/>
+                <div class="table-responsive">
+                    <table id="sub-link-table" class="table mb-0">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>#</th>
+                                <th>Address Link</th>
+                                <th>Master ID#</th>
+                                <th>Content ID#</th>
+                                <th>Crawled Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        {% for link in links %}
+                            <tr>
+                                <td>{{ link.id }}</td>
+                                <td><a href="{{ link.sub_url }}" target="_blank">{{ link.sub_url }}</a></td>
+                                <td>{{ link.master_url.id }}</td>
+                                <td>{{ link.content.id }}</td>
+                                <td>{{ link.completed }}</td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        </div>
+      </div>
+      <!--end page-content-wrapper-->
+    </div>
+    <!--end page-wrapper-->
+    <!--start overlay-->
+    <div class="overlay toggle-btn-mobile"></div>
+    <!--end overlay-->
+    <!--Start Back To Top Button--> <a href="javaScript:;" class="back-to-top"><i class='bx bxs-up-arrow-alt'></i></a>
+    <!--End Back To Top Button-->
+    <!--footer -->
+    <!-- end footer -->
+  </div>
+  <!-- end wrapper -->
+  <!-- JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="{% static 'assets/js/jquery.min.js' %}"></script>
+  <script src="{% static 'assets/js/popper.min.js' %}"></script>
+  <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+  <!--plugins-->
+  <script src="{% static 'assets/plugins/simplebar/js/simplebar.min.js' %}"></script>
+  <script src="{% static 'assets/plugins/metismenu/js/metisMenu.min.js' %}"></script>
+  <script src="{% static 'assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js' %}"></script>
+  <!-- Vector map JavaScript -->
+  <script src="{% static 'assets/plugins/vectormap/jquery-jvectormap-2.0.2.min.js' %}"></script>
+  <script src="{% static 'assets/plugins/vectormap/jquery-jvectormap-world-mill-en.js' %}"></script>
+  <script src="{% static 'assets/plugins/vectormap/jquery-jvectormap-in-mill.js' %}"></script>
+  <script src="{% static 'assets/plugins/vectormap/jquery-jvectormap-us-aea-en.js' %}"></script>
+  <script src="{% static 'assets/plugins/vectormap/jquery-jvectormap-uk-mill-en.js' %}"></script>
+  <script src="{% static 'assets/plugins/vectormap/jquery-jvectormap-au-mill.js' %}"></script>
+  <script src="{% static 'assets/plugins/apexcharts-bundle/js/apexcharts.min.js' %}"></script>
+  <script src="{% static 'assets/js/index.js' %}"></script>
+  <!-- App JS -->
+  <script src="{% static 'assets/js/app.js' %}"></script>
+  <script src="{% static 'assets/js/queue.js' %}"></script>
+</body>
+
+</html>

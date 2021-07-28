@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <title>User</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!--favicon-->
+    <link rel="icon" href="{% static 'assets/images/favicon-32x32.png' %}" type="image/png" />
+    <!--plugins-->
+    <link href="{% static 'assets/plugins/simplebar/css/simplebar.css' %}" rel="stylesheet" />
+    <!--Data Tables -->
+    <link href="{% static 'assets/plugins/datatable/css/dataTables.bootstrap4.min.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'assets/plugins/datatable/css/buttons.bootstrap4.min.css' %}" rel="stylesheet" type="text/css">
+    <!--plugins-->
+    <link href="{% static 'assets/plugins/simplebar/css/simplebar.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/plugins/metismenu/css/metisMenu.min.css' %}" rel="stylesheet" />
+    <!-- loader-->
+    <link href="{% static 'assets/css/pace.min.css' %}" rel="stylesheet" />
+    <script src="{% static 'assets/js/pace.min.js' %}"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}" />
+    <!-- Icons CSS -->
+    <link rel="stylesheet" href="{% static 'assets/css/icons.css' %}" />
+    <!-- App CSS -->
+    <link rel="stylesheet" href="{% static 'assets/css/app.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/dark-sidebar.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/dark-theme.css' %}" />
+</head>
+<body>
+{% csrf_token %}
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Crawler</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="/">User<span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="{% url 'dashboard' %}" target="_blank">Admin</a>
+    </div>
+  </div>
+</nav>
+
+{% if message %}
+<div class="alert alert-info" role="alert">
+    {{ message }}
+</div>
+{% endif %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-3 col-md-3 col-lg-3"></div>
+        <div class="col-sm-6 col-md-6 col-lg-6">
+            <form class="mt-5" action="{% url 'user_url_post' %}" method="post">
+                {% csrf_token %}
+              <!-- Email input -->
+              <div class="form-outline mb-4">
+                <input id="link" class="form-control" type="text" name="web_link"/>
+                <label class="form-label" for="link">Web Link</label>
+              </div>
+
+              <!-- Password input -->
+              <div class="form-outline mb-4">
+                <input id="depth" class="form-control" type="text" name="page_depth"/>
+                <label class="form-label" for="depth">Page Depth(Parameter):</label>
+              </div>
+
+              <!-- Submit button -->
+              <input type="submit" class="btn btn-primary btn-block" value="Submit">
+            </form>
+        </div>
+        <div class="col-sm-3 col-md-3 col-lg-3"></div>
+
+
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="{% static 'assets/js/popper.min.js' %}"></script>
+<script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+<!--plugins-->
+<script src="{% static 'assets/plugins/simplebar/js/simplebar.min.js' %}"></script>
+<script src="{% static 'assets/plugins/metismenu/js/metisMenu.min.js' %}"></script>
+<script src="{% static 'assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js' %}"></script>
+<!--Data Tables js-->
+<script src="{% static 'assets/plugins/datatable/js/jquery.dataTables.min.js' %}"></script>
+<!-- App JS -->
+<script src="{% static 'assets/js/app.js' %}"></script>
+
+</body>
+</html>
